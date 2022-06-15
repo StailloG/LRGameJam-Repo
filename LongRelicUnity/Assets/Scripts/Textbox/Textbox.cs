@@ -109,7 +109,7 @@ public class Textbox : MonoBehaviour
         List<Dialogue> dialogues = dia.Dialogues;
 
         //Disable Player Movement
-        //FindObjectOfType<PlayerMovement>()?.DisableMovement();
+        FindObjectOfType<PlayerMovement>().DisableMovement();
         //FindObjectOfType<PlayerState>()?.SetInteracting(true);
 
         for (int d = 0; d < dialogues.Count; d++) {
@@ -230,7 +230,7 @@ public class Textbox : MonoBehaviour
 
         coroutine = null;
         //Enable Player Movement
-        //FindObjectOfType<PlayerMovement>()?.EnableMovement();
+        FindObjectOfType<PlayerMovement>().EnableMovement();
         //FindObjectOfType<PlayerState>()?.SetInteracting(false);
         gameObject.SetActive(false);
        

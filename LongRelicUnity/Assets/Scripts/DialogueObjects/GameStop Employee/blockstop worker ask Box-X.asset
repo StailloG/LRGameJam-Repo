@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: blockstop worker ask Box-X
   m_EditorClassIdentifier: 
   dialogues:
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: hey um, sorry to bother you I was wondering if you had any Box-X 5's in
       stock?
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: f318324ce0b5aa540b40fe473fbf5a68, type: 3}
     line: ...
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: ...
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: f318324ce0b5aa540b40fe473fbf5a68, type: 3}
     line: 'Sorry kid, some guy comes in every time we restock and buys all of them
       and sells them literally outside our door for double the price! We finally
       banned him, but its taking a while for new shipments. '
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: 'oh wow, thats unfortunate, thanks for the help! '
   linkedSet: []
