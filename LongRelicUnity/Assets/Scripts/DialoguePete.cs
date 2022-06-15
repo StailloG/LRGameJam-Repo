@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialogue : MonoBehaviour
+public class DialoguePete : MonoBehaviour
 {
     [SerializeField] private string dialogue;
     private bool inArea;
     public Text textBox;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -22,7 +16,7 @@ public class Dialogue : MonoBehaviour
         {
             if (inArea)
             {
-                Debug.Log("hello");
+               
                 //set text object active
                 textBox.gameObject.SetActive(true);
                 //assign the text 
