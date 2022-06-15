@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coins : MonoBehaviour
 {
     //variables
-    public int coinCounter = 0;
+    public CoinManagement coinManagerScript;
     public bool pickUp = false;
 
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class Coins : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && pickUp == true)
         {
-            coinCounter += 1;
+            coinManagerScript.addCoin();
             Destroy(gameObject);
         }
     }
