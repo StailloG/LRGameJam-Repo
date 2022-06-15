@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828c47c4a50d62f4d8846a98e9506ad4, type: 3}
+  m_Name: blockstop worker ask Box-X
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+    line: hey um, sorry to bother you I was wondering if you had any Box-X 5's in
+      stock?
+  - profile: {fileID: 0}
+    line: ...
+  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+    line: ...
+  - profile: {fileID: 0}
+    line: 'Sorry kid, some guy comes in every time we restock and buys all of them
+      and sells them literally outside our door for double the price! We finally
+      banned him, but its taking a while for new shipments. '
+  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+    line: 'oh wow, thats unfortunate, thanks for the help! '
+  linkedSet: []
