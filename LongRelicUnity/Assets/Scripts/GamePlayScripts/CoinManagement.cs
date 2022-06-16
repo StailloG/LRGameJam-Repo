@@ -23,12 +23,6 @@ public class CoinManagement : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //setactive(true) after speaks with store keeper
-    }
-
     public void addCoin()
     {
         coinCounter++;
@@ -50,7 +44,7 @@ public class CoinManagement : MonoBehaviour
 
     public IEnumerator coinsObtainedAppear()
     {
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(13f);
 
         counterTxt.gameObject.SetActive(true);
         counterTxt.text = "Coins Obtained:  " + coinCounter;

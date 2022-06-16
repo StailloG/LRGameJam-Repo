@@ -7,6 +7,9 @@ public class ShopKeeperDT : DialogueTalk
     //if person has extra dialogue, you would add them here 
     [SerializeField] private Dialogue_Set collectCoins;
     [SerializeField] private Dialogue_Set transaction;
+    [SerializeField] private Dialogue_Set finalSentence;
+
+    public GameObject keyboard;
 
     public enum DialogueState { intro, collectingCoins, transactioning, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
     public DialogueState state;
@@ -15,7 +18,7 @@ public class ShopKeeperDT : DialogueTalk
     void Start()
     {
         state = DialogueState.intro;//this is how you can change/set state. make sure at start it is set to intro
-                                    //in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states 
+                                    //in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states
     }
 
     public override void Talk()
@@ -37,11 +40,12 @@ public class ShopKeeperDT : DialogueTalk
 
             case DialogueState.transactioning:
                 transaction?.sendDialogue();
+                Destroy(keyboard);
                 state = DialogueState.final;
                 break;
 
             case DialogueState.final:
-                FinalDialogue();//this is from the inherited DialogueTalk Class
+                finalSentence?.sendDialogue();
                 break;
         }
 
