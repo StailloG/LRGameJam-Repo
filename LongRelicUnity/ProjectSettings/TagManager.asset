@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player2
   - Garage Sale
+  - Coins
   layers:
   - Default
   - TransparentFX
