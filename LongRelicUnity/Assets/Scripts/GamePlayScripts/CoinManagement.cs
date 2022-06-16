@@ -17,7 +17,7 @@ public class CoinManagement : MonoBehaviour
 
         coinList = FindObjectsOfType<Coins>(); //array of all coins in the scene
         
-        for(int i = 0; i <= coinList.Length; i++)
+        for(int i = 0; i < coinList.Length; i++)
         {
             coinList[i].gameObject.SetActive(false);
         }
@@ -33,6 +33,11 @@ public class CoinManagement : MonoBehaviour
     {
         coinCounter++;
         counterTxt.text = "Coins Obtained:  " + coinCounter;
+
+        if(coinCounter == 5)
+        {
+            FindObjectOfType<ShopKeeperDT>().state = ShopKeeperDT.DialogueState.transactioning;
+        }
     }
 
     public void openCoins()

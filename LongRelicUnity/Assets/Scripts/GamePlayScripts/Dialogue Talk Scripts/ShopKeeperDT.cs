@@ -33,7 +33,6 @@ public class ShopKeeperDT : DialogueTalk
 
             case DialogueState.collectingCoins://this is from this class, 
                 collectCoins?.sendDialogue();
-                state = DialogueState.transactioning;
                 break;
 
             case DialogueState.transactioning:

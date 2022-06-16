@@ -10,9 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 828c47c4a50d62f4d8846a98e9506ad4, type: 3}
-  m_Name: CoinCollectDialogue
+  m_Name: TransactionDialogue
   m_EditorClassIdentifier: 
-  dialogues:
-  - profile: {fileID: 21300000, guid: b94c93bc09faf174fbd136d90c8c35c7, type: 3}
-    line: What are you doing back here without my money?? Get lost!
+  dialogues: []
   linkedSet: []
