@@ -8,6 +8,7 @@ TagManager:
   - Garage Sale
   - Coins
   - Ladder
+  - InteractText
   layers:
   - Default
   - TransparentFX

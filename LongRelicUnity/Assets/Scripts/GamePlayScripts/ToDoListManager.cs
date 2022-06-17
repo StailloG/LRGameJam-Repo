@@ -38,7 +38,29 @@ public class ToDoListManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Testing to make using keyboard input to make sure it works 
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            if (IsAllItemsFound())
+                Debug.Log("all items have been found!");
+        else
+                Debug.Log("not all items have been found!");
+
+        if (Input.GetKeyDown(KeyCode.Q))
+            FoundItem1();
+
+        if (Input.GetKeyDown(KeyCode.Y))
+            FoundItem2();
+
+        if (Input.GetKeyDown(KeyCode.E))
+            FoundItem3();
+
+        if (Input.GetKeyDown(KeyCode.R))
+            FoundItem4();
+
+        if (Input.GetKeyDown(KeyCode.T))
+            FoundItem5();
+
     }
 
     public void FoundItem1()
@@ -65,6 +87,12 @@ public class ToDoListManager : MonoBehaviour
     {
         item5Found = true;
     }
+
+
+    public bool IsAllItemsFound()
+    {
+        return item1Found && item2Found && item3Found && item4Found && item5Found;
+    }    
 
 
     public void OpenTodoPanel()

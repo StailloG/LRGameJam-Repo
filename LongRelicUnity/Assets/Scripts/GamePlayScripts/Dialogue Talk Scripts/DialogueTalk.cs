@@ -6,7 +6,8 @@ public class DialogueTalk : MonoBehaviour
 {
     [SerializeField] private Dialogue_Set introDialogue;
     [SerializeField] private Dialogue_Set finalDialogue;
-    [SerializeField][Range(1.0f, 10.0f)] private float radius;  
+    [SerializeField][Range(1.0f, 10.0f)] private float radius = 5.0f;
+  
     public bool nearPlayer
     {
         get
@@ -23,6 +24,10 @@ public class DialogueTalk : MonoBehaviour
 
     private void Update()
     {
+      
+
+      
+
         //if player presses talk button Talk
         if (nearPlayer && Input.GetKeyDown(KeyCode.Space) && !Textbox.On)
         {
