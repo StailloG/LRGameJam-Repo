@@ -26,6 +26,4 @@ MonoBehaviour:
     line: Please help me, I can't reach that high!
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: I'll be back once I find something to get me up there.
-  - profile: {fileID: 21300000, guid: a27e72c36980eed49b1a61077edb0617, type: 3}
-    line: SAMPLE_TEXT
   linkedSet: []

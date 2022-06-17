@@ -21,11 +21,11 @@ public class Interactables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (withoutLadder == true)
-        {
-            //play dialogue without ladder
-            FindObjectOfType<CatLadyDT>().state = CatLadyDT.DialogueState.woLadder;
-        }
+        //if (withoutLadder == true)
+        //{
+        //    //play dialogue without ladder
+        //    FindObjectOfType<CatLadyDT>().state = CatLadyDT.DialogueState.woLadder;
+        //}
 
 
         if (hasLadder == true && Input.GetKeyDown(KeyCode.Space))
@@ -36,11 +36,11 @@ public class Interactables : MonoBehaviour
         }
 
 
-        if (withLadder == true)
-        {
-            //play dialogue with ladder
-            FindObjectOfType<CatLadyDT>().state = CatLadyDT.DialogueState.wLadder;
-        }
+        //if (withLadder == true)
+        //{
+        //    //play dialogue with ladder
+        //    FindObjectOfType<CatLadyDT>().state = CatLadyDT.DialogueState.wLadder;
+        //}
 
         
     }

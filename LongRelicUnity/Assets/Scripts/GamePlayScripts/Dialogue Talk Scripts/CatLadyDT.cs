@@ -15,7 +15,7 @@ public class CatLadyDT : DialogueTalk
     // Start is called before the first frame update
     void Start()
     {
-        state = DialogueState.woLadder;//this is how you can change/set state. make sure at start it is set to intro
+        state = DialogueState.intro;//this is how you can change/set state. make sure at start it is set to intro
                                        //in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states
     }
 
@@ -25,10 +25,15 @@ public class CatLadyDT : DialogueTalk
         //using enum to do that 
         switch (state)
         {
-           
-            case DialogueState.woLadder:
+            case DialogueState.intro:
                 IntroDialogue();   //this is from the inherited DialogueTalk Class  
                 state = DialogueState.woLadder;
+                break;
+
+
+            case DialogueState.woLadder:
+
+                withoutLadder?.sendDialogue();
                 break;
 
               

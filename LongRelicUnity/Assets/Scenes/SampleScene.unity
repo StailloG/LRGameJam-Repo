@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 18364576}
   - component: {fileID: 18364575}
   - component: {fileID: 18364574}
+  - component: {fileID: 18364577}
   m_Layer: 0
   m_Name: Ladder
   m_TagString: Ladder
@@ -233,6 +234,18 @@ Transform:
   m_Father: {fileID: 1306788663}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &18364577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18364573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576198f8eb7ad074ba29e4a3e54966f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &34279089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,7 +2012,6 @@ GameObject:
   - component: {fileID: 1052516243}
   - component: {fileID: 1052516242}
   - component: {fileID: 1052516244}
-  - component: {fileID: 1052516245}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player2
@@ -2135,22 +2147,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30.000002, y: 30.000002}
   m_EdgeRadius: 0
---- !u!114 &1052516245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052516239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0bd97810b54f24d979f62b0e0b7b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ladder: {fileID: 18364573}
-  hasLadder: 0
-  withoutLadder: 1
-  withLadder: 0
 --- !u!1 &1060734273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,7 +2338,6 @@ GameObject:
   - component: {fileID: 1185973296}
   - component: {fileID: 1185973295}
   - component: {fileID: 1185973297}
-  - component: {fileID: 1185973298}
   - component: {fileID: 1185973299}
   m_Layer: 0
   m_Name: Cat Owner
@@ -2443,20 +2438,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30.000002, y: 30.000002}
   m_EdgeRadius: 0
---- !u!114 &1185973298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185973294}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34fd2754cceea204aae14dedc46b393f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talkIcon: {fileID: 0}
-  dialogue: {fileID: 11400000, guid: e8e0fab2145346f45b13f0e11ff0cc73, type: 2}
 --- !u!114 &1185973299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,10 +2450,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7588674177b42c4fb6e25bd01ec58c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introDialogue: {fileID: 11400000, guid: cca7fc22e6cafeb4284ba168ee99755e, type: 2}
+  introDialogue: {fileID: 11400000, guid: 15e3402d852403d439df89e49bfd34f3, type: 2}
   finalDialogue: {fileID: 0}
-  radius: 0
-  withoutLadder: {fileID: 11400000, guid: 15e3402d852403d439df89e49bfd34f3, type: 2}
+  radius: 5.26
+  withoutLadder: {fileID: 11400000, guid: cca7fc22e6cafeb4284ba168ee99755e, type: 2}
   withLadder: {fileID: 11400000, guid: 40a593c5a1a38764f96329943111e4fe, type: 2}
   finalSentence: {fileID: 0}
   state: 0
