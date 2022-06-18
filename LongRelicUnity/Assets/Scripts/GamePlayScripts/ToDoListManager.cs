@@ -17,9 +17,6 @@ public class ToDoListManager : MonoBehaviour
     private bool item4Found = false;//???
     [SerializeField] private GameObject item4UISlash;
 
-    private bool item5Found = false;//???
-    [SerializeField] private GameObject item5UISlash;
-
 
     [SerializeField] private GameObject toDoPanel;
 
@@ -30,7 +27,6 @@ public class ToDoListManager : MonoBehaviour
         item2UISlash.gameObject.SetActive(false);
         item3UISlash.gameObject.SetActive(false);
         item4UISlash.gameObject.SetActive(false);
-        item5UISlash.gameObject.SetActive(false);
 
         toDoPanel.gameObject.SetActive(false);
     }
@@ -58,8 +54,6 @@ public class ToDoListManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
             FoundHardDrive();
 
-        if (Input.GetKeyDown(KeyCode.T))
-            FoundItem5();
 
     }
 
@@ -81,11 +75,6 @@ public class ToDoListManager : MonoBehaviour
     public void FoundHardDrive()
     {
         item4Found = true;
-    }
-
-    public void FoundItem5()
-    {
-        item5Found = true;
     }
 
 
@@ -115,9 +104,6 @@ public class ToDoListManager : MonoBehaviour
         if (item4Found)
             item4UISlash.SetActive(true);
 
-
-        if (item5Found)
-            item5UISlash.SetActive(true);
 
     }
 
