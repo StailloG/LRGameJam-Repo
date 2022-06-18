@@ -30,6 +30,7 @@ public class ScammerDT : DialogueTalk
             case DialogueState.action://this is from this class, 
                 afterBlockstop?.sendDialogue();
                 state = DialogueState.final;
+                FindObjectOfType<ToDoListManager>().FoundHardDrive(); 
                 break;
 
             case DialogueState.final:

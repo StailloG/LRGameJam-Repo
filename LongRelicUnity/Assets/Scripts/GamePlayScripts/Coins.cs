@@ -13,6 +13,7 @@ public class Coins : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && pickUp == true)
         {
+            FindObjectOfType<SFXPlayer>().PlayCoin();
             coinManagerScript.addCoin();
             Destroy(gameObject);
         }

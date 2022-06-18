@@ -23,43 +23,46 @@ public class DumpsterDT : DialogueTalk
 
     private void OnMouseDown()
     {
-        
+
+        if(state == DialogueState.getLadder)
+        {
+            ladder?.sendDialogue();
+            state = DialogueState.getMonitor;
+            FindObjectOfType<SFXPlayer>().PlayTrash();
+        }
+
+        if (state == DialogueState.getMonitor)
+        {
+            monitor?.sendDialogue();
+            state = DialogueState.final;
+            FindObjectOfType<ToDoListManager>().FoundMonitor();
+            FindObjectOfType<SFXPlayer>().PlayTrash();
+        }
+
+        if (state == DialogueState.final)
+        {
+            final?.sendDialogue();
+         
+
+        }
+
     }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            // Casts the ray and get the first game object hit
-            Physics.Raycast(ray, out hit);
-            Debug.Log("This hit at " + hit.point);
-        }
+      
     }
     public override void Talk()
     {
         //logic here to determine what to say 
         //using enum to do that 
-        switch (state)
-        {
-           
-
-            case DialogueState.getLadder:
-                ladder?.sendDialogue();
-                break;
-
-            case DialogueState.getMonitor://this is from this class, 
-                monitor?.sendDialogue();
-                break;
-
-            case DialogueState.final://this is from this class, 
-                final?.sendDialogue();
-                break;
-        }
+       
     }
 
-
+    private void OnMouseUp()
+    {
+        
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -67,6 +70,7 @@ public class DumpsterDT : DialogueTalk
         if (state == DialogueState.intro)
         {
             IntroDialogue();
+            state = DialogueState.getLadder;
         }
             
     }

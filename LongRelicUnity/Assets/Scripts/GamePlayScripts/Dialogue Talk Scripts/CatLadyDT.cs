@@ -28,6 +28,7 @@ public class CatLadyDT : DialogueTalk
             case DialogueState.intro:
                 IntroDialogue();   //this is from the inherited DialogueTalk Class  
                 state = DialogueState.woLadder;
+                FindObjectOfType<SFXPlayer>().PlayCat();
                 break;
 
 

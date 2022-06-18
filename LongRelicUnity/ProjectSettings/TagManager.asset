@@ -9,6 +9,7 @@ TagManager:
   - Coins
   - Ladder
   - InteractText
+  - Dumpster
   layers:
   - Default
   - TransparentFX
