@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 6f;
     private bool canMove = true;
 
+    private float moveH;
+    private float moveV;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +22,20 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (!canMove) return;
+        moveH = Input.GetAxisRaw("Horizontal");
+        moveV = Input.GetAxisRaw("Vertical");
 
-
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed, 0f);
-
-        //using rb & velocity to stop jittering between gameobjects
+       Vector3 movement = new Vector3(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed, 0f);
+      
+       //using rb & velocity to stop jittering between gameobjects
         playerRB.velocity = movement;
+       
     }
 
-
+    private void FixedUpdate()
+    {
+       
+    }
 
     public void EnableMovement()
     {
