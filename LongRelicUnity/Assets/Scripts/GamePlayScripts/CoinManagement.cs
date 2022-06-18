@@ -23,6 +23,14 @@ public class CoinManagement : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(FindObjectOfType<ShopKeeperDT>().hasKeyboard == true)
+        {
+            counterTxt.gameObject.SetActive(false);
+        }
+    }
+
     public void addCoin()
     {
         coinCounter++;

@@ -40,18 +40,6 @@ public class CatLadyDT : DialogueTalk
             case DialogueState.wLadder://this is from this class, 
                 withLadder?.sendDialogue();
                 break;
-
-                /*
-          case DialogueState.transactioning:
-              transaction?.sendDialogue();
-              Destroy(keyboard);
-              state = DialogueState.final;
-              break;
-
-          case DialogueState.final:
-              finalSentence?.sendDialogue();
-              break;
-              */
         }
     }
 }

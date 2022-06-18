@@ -10,6 +10,7 @@ public class ShopKeeperDT : DialogueTalk
     [SerializeField] private Dialogue_Set finalSentence;
 
     public GameObject keyboard;
+    public bool hasKeyboard = false; //public for CoinManagement script
 
     public enum DialogueState { intro, collectingCoins, transactioning, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
     public DialogueState state;
@@ -41,6 +42,7 @@ public class ShopKeeperDT : DialogueTalk
             case DialogueState.transactioning:
                 transaction?.sendDialogue();
                 Destroy(keyboard);
+                hasKeyboard = true;
                 state = DialogueState.final;
                 break;
 
