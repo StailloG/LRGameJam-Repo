@@ -47,38 +47,38 @@ public class ToDoListManager : MonoBehaviour
                 Debug.Log("not all items have been found!");
 
         if (Input.GetKeyDown(KeyCode.Q))
-            FoundItem1();
+            FoundKeyboard();
 
         if (Input.GetKeyDown(KeyCode.Y))
-            FoundItem2();
+            FoundMouse();
 
         if (Input.GetKeyDown(KeyCode.E))
-            FoundItem3();
+            FoundMonitor();
 
         if (Input.GetKeyDown(KeyCode.R))
-            FoundItem4();
+            FoundHardDrive();
 
         if (Input.GetKeyDown(KeyCode.T))
             FoundItem5();
 
     }
 
-    public void FoundItem1()
+    public void FoundKeyboard()
     {
         item1Found = true;
     }
 
-    public void FoundItem2()
+    public void FoundMouse()
     {
         item2Found = true;
     }
 
-    public void FoundItem3()
+    public void FoundMonitor()
     {
         item3Found = true;
     }
 
-    public void FoundItem4()
+    public void FoundHardDrive()
     {
         item4Found = true;
     }
@@ -91,7 +91,7 @@ public class ToDoListManager : MonoBehaviour
 
     public bool IsAllItemsFound()
     {
-        return item1Found && item2Found && item3Found && item4Found && item5Found;
+        return item1Found && item2Found && item3Found && item4Found;
     }    
 
 

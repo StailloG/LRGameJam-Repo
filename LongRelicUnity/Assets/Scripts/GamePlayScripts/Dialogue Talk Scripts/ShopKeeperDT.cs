@@ -44,6 +44,7 @@ public class ShopKeeperDT : DialogueTalk
                 Destroy(keyboard);
                 hasKeyboard = true;
                 state = DialogueState.final;
+                FindObjectOfType<ToDoListManager>().FoundKeyboard(); 
                 break;
 
             case DialogueState.final:
