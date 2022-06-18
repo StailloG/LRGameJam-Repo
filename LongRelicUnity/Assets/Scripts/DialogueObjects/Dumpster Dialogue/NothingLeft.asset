@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: I'd rather take a shower than get inside there again.
+    line: I think that's it, I'd rather take a shower than get inside there again.
   linkedSet: []

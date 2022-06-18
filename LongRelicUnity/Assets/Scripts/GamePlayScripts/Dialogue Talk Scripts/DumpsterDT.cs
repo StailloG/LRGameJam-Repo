@@ -9,6 +9,8 @@ public class DumpsterDT : DialogueTalk
     [SerializeField] private Dialogue_Set monitor;
     [SerializeField] private Dialogue_Set final;
 
+    private bool inArea = false;
+
     public enum DialogueState { intro, getLadder, getMonitor, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
     public DialogueState state;
 
@@ -18,16 +20,30 @@ public class DumpsterDT : DialogueTalk
         state = DialogueState.intro;//this is how you can change/set state. make sure at start it is set to intro
                                     //in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states
     }
+
+    private void OnMouseDown()
+    {
+        
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            // Casts the ray and get the first game object hit
+            Physics.Raycast(ray, out hit);
+            Debug.Log("This hit at " + hit.point);
+        }
+    }
     public override void Talk()
     {
         //logic here to determine what to say 
         //using enum to do that 
         switch (state)
         {
-            case DialogueState.intro:
-                IntroDialogue();   //this is from the inherited DialogueTalk Class  
-                state = DialogueState.getLadder;
-                break;
+           
 
             case DialogueState.getLadder:
                 ladder?.sendDialogue();
@@ -41,5 +57,23 @@ public class DumpsterDT : DialogueTalk
                 final?.sendDialogue();
                 break;
         }
+    }
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        inArea = true;
+        if (state == DialogueState.intro)
+        {
+            IntroDialogue();
+        }
+            
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        inArea = false;
     }
 }
