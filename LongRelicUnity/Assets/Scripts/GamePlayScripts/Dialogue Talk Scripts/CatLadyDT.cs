@@ -9,7 +9,7 @@ public class CatLadyDT : DialogueTalk
     [SerializeField] private Dialogue_Set withLadder;
     [SerializeField] private Dialogue_Set finalSentence;
 
-    public enum DialogueState { intro, woLadder, wLadder, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
+    public enum DialogueState { intro, woLadder, wLadder, saveCat, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
     public DialogueState state;
 
     // Start is called before the first frame update
@@ -41,6 +41,14 @@ public class CatLadyDT : DialogueTalk
             case DialogueState.wLadder://this is from this class, 
                 withLadder?.sendDialogue();
                 break;
+
+            case DialogueState.saveCat:
+                finalSentence?.sendDialogue();
+                var source = FindObjectOfType<AdvancedMusicPlayer>().stem4;
+                StartCoroutine(FindObjectOfType<AdvancedMusicPlayer>().StartFade(source, 3.333f, 1.0f, 0.0f));
+                
+                break; 
+
         }
     }
 }

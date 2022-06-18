@@ -44,6 +44,8 @@ public class ShopKeeperDT : DialogueTalk
                 Destroy(keyboard);
                 hasKeyboard = true;
                 state = DialogueState.final;
+                var source = FindObjectOfType<AdvancedMusicPlayer>().stem2;
+                StartCoroutine(FindObjectOfType<AdvancedMusicPlayer>().StartFade(source, 3.333f, 1.0f, 0.0f));
                 FindObjectOfType<ToDoListManager>().FoundKeyboard(); 
                 break;
 

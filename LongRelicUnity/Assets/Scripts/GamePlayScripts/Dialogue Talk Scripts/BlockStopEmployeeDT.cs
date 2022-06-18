@@ -28,7 +28,9 @@ public class BlockStopEmployeeDT : DialogueTalk //inheriting from dialogue talk,
 
             case DialogueState.action://this is from this class, 
                 askForXBox?.sendDialogue();
-                FindObjectOfType<ScammerDT>().state = ScammerDT.DialogueState.action;//change dialogue state of scammer 
+                FindObjectOfType<ScammerDT>().state = ScammerDT.DialogueState.action;//change dialogue state of scammer
+                                                                                   
+               
                 state = DialogueState.final; //go to final state
                 break;
 

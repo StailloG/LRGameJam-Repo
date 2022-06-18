@@ -23,6 +23,8 @@ public class DumpsterDT : DialogueTalk
 
     private void OnMouseDown()
     {
+        if (!Textbox.On) return; 
+
 
         if(state == DialogueState.getLadder)
         {
@@ -42,7 +44,8 @@ public class DumpsterDT : DialogueTalk
         if (state == DialogueState.final)
         {
             final?.sendDialogue();
-         
+            var source = FindObjectOfType<AdvancedMusicPlayer>().stem3;
+            StartCoroutine(FindObjectOfType<AdvancedMusicPlayer>().StartFade(source, 3.333f, 1.0f, 0.0f));
 
         }
 

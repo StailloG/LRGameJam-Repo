@@ -39,6 +39,7 @@ public class CoinManagement : MonoBehaviour
         if(coinCounter == 5)
         {
             FindObjectOfType<ShopKeeperDT>().state = ShopKeeperDT.DialogueState.transactioning;
+          
         }
     }
 

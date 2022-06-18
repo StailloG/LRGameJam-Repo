@@ -36,23 +36,7 @@ public class ToDoListManager : MonoBehaviour
     {
         //Testing to make using keyboard input to make sure it works 
 
-        if (Input.GetKeyDown(KeyCode.Z))
-            if (IsAllItemsFound())
-                Debug.Log("all items have been found!");
-        else
-                Debug.Log("not all items have been found!");
-
-        if (Input.GetKeyDown(KeyCode.Q))
-            FoundKeyboard();
-
-        if (Input.GetKeyDown(KeyCode.Y))
-            FoundMouse();
-
-        if (Input.GetKeyDown(KeyCode.E))
-            FoundMonitor();
-
-        if (Input.GetKeyDown(KeyCode.R))
-            FoundHardDrive();
+       
 
 
     }
@@ -80,6 +64,7 @@ public class ToDoListManager : MonoBehaviour
 
     public bool IsAllItemsFound()
     {
+
         return item1Found && item2Found && item3Found && item4Found;
     }    
 

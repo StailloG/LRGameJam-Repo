@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Textbox : MonoBehaviour
 {
@@ -22,6 +23,13 @@ public class Textbox : MonoBehaviour
     private Image profile;
     [SerializeField]
     private float speed = 10.0f; // 10 chars a second
+
+
+    [SerializeField]
+    AudioMixerSnapshot normalSnapshot;
+
+    [SerializeField]
+    AudioMixerSnapshot dialougueSnapshot;
 
     [SerializeField]
     public List<Dialogue_Set> nextDialogues = new List<Dialogue_Set>();
@@ -53,7 +61,7 @@ public class Textbox : MonoBehaviour
             Destroy(gameObject);
         }
 
-
+        normalSnapshot.TransitionTo(1.0f);
     }
 
     private void Update()
@@ -110,6 +118,7 @@ public class Textbox : MonoBehaviour
 
         //Disable Player Movement
         FindObjectOfType<PlayerMovement>().DisableMovement();
+        dialougueSnapshot.TransitionTo(2.5f);
         //FindObjectOfType<PlayerState>()?.SetInteracting(true);
 
         for (int d = 0; d < dialogues.Count; d++) {
@@ -231,6 +240,7 @@ public class Textbox : MonoBehaviour
         coroutine = null;
         //Enable Player Movement
         FindObjectOfType<PlayerMovement>().EnableMovement();
+        normalSnapshot.TransitionTo(2.5f);
         //FindObjectOfType<PlayerState>()?.SetInteracting(false);
         gameObject.SetActive(false);
        

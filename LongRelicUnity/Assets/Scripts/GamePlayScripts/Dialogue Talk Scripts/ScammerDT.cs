@@ -30,6 +30,8 @@ public class ScammerDT : DialogueTalk
             case DialogueState.action://this is from this class, 
                 afterBlockstop?.sendDialogue();
                 state = DialogueState.final;
+                var source = FindObjectOfType<AdvancedMusicPlayer>().stem3;
+                StartCoroutine(FindObjectOfType<AdvancedMusicPlayer>().StartFade(source, 5.333f, 1.0f, 0.0f));
                 FindObjectOfType<ToDoListManager>().FoundHardDrive(); 
                 break;
 
