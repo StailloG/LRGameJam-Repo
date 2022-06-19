@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: Reseller NPC before talk to employee
   m_EditorClassIdentifier: 
   dialogues:
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
     line: Psst! hey kid, wanna do me a favor?
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: 'uhh sure I guess, whats in it for me? '
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
     line: 'nice! you''re a hustler like me. Ill give you a free 1 TB hard drive. '
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: 'oh sweet!! '
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
     line: All you gotta do is ask that blockstop worker if they have any Box-X 5
       Consoles in stock
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: 'oh the new Box-X''s? Why can''t you ask? '
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
     line: I guess you can say I'm "banned" from all blockstop because  apparently
       I'm a "extreme reseller"
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: oh...
   linkedSet: []
