@@ -64,7 +64,13 @@ public class ToDoListManager : MonoBehaviour
 
     public bool IsAllItemsFound()
     {
-       
+        if (item1Found && item2Found && item3Found && item4Found)
+        {
+            FindObjectOfType<BlackBlockDT>().state = BlackBlockDT.DialogueState.final;
+            //"Oh I can go back to my friend now" 
+            //finishItems?.sendDialogue(); 
+        }
+           
        
         return item1Found && item2Found && item3Found && item4Found;
     }    

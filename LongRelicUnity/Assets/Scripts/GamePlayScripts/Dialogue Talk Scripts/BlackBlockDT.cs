@@ -9,33 +9,34 @@ public class BlackBlockDT : DialogueTalk
     [SerializeField] private Dialogue_Set notEnoughParts;
     [SerializeField] private Dialogue_Set allParts;
 
-    public enum DialogueState { intro, done } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
+    public enum DialogueState { intro, mid, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
     public DialogueState state;
 
     // Start is called before the first frame update
     void Start()
     {
-      //this is how you can change/set state. make sure at start it is set to intro
-        IntroDialogue();
-        state = DialogueState.intro;//in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states
+        state = DialogueState.mid;//this is how you can change/set state. make sure at start it is set to intro
+        IntroDialogue();                        //in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states
     }
 
     public override void Talk()
     {
-        if(FindObjectOfType<ToDoListManager>().IsAllItemsFound())
-            state = DialogueState.done; 
         //logic here to determine what to say 
         //using enum to do that 
         switch (state)
         {
             case DialogueState.intro:
-                //some logic here 
+                IntroDialogue();   //this is from the inherited DialogueTalk Class 
+                state = DialogueState.mid;
                 break;
 
+            case DialogueState.mid:
+                notEnoughParts?.sendDialogue();
+               
+                break;
 
-            case DialogueState.done:
-                Debug.Log("GAME IS OVER LETS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
-                intro?.sendDialogue();   //this is from the inherited DialogueTalk Class 
+            case DialogueState.final:
+                allParts?.sendDialogue();
                 StartCoroutine(NextLvl());
                 break;
 
