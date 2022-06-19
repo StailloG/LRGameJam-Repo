@@ -2837,7 +2837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 515774557}
   - component: {fileID: 515774558}
-  - component: {fileID: 515774559}
   m_Layer: 0
   m_Name: Advance Music
   m_TagString: Untagged
@@ -2880,18 +2879,6 @@ MonoBehaviour:
   stem3: {fileID: 1126184037}
   stem4: {fileID: 262930703}
   dur: 3.333
---- !u!114 &515774559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515774556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33c93864d5d838a4fb9d06607c406ec4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3354,7 +3341,7 @@ Transform:
   - {fileID: 385458761}
   - {fileID: 162087209}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1032233650
 PrefabInstance:
@@ -3733,7 +3720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introDialogue: {fileID: 11400000, guid: 5d821081d4fe6d448a0a6fe9898e36d0, type: 2}
   finalDialogue: {fileID: 11400000, guid: 567735ab62379cd4ca2ce3dd2d26f062, type: 2}
-  radius: 5.02
+  radius: 3
   debugNearPlayer: 0
   afterBlockstop: {fileID: 11400000, guid: dc0e8269f0faf2d49b3c82d9a8c7bcf5, type: 2}
   state: 0
