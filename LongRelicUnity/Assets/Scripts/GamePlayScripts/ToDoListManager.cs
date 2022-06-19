@@ -15,7 +15,7 @@ public class ToDoListManager : MonoBehaviour
     [SerializeField] private GameObject item3UISlash;
 
     private bool item4Found = false;//???
-    [SerializeField] private GameObject item4UISlash;
+    [SerializeField] private GameObject HardDriveUI;
 
 
     [SerializeField] private GameObject toDoPanel;
@@ -26,7 +26,7 @@ public class ToDoListManager : MonoBehaviour
         item1UISlash.gameObject.SetActive(false);
         item2UISlash.gameObject.SetActive(false);
         item3UISlash.gameObject.SetActive(false);
-        item4UISlash.gameObject.SetActive(false);
+        HardDriveUI.gameObject.SetActive(false);
 
         toDoPanel.gameObject.SetActive(false);
     }
@@ -87,7 +87,7 @@ public class ToDoListManager : MonoBehaviour
 
 
         if (item4Found)
-            item4UISlash.SetActive(true);
+            HardDriveUI.SetActive(true);
 
 
     }

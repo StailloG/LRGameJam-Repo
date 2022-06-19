@@ -46,7 +46,7 @@ public class CatLadyDT : DialogueTalk
                 finalSentence?.sendDialogue();
                 var source = FindObjectOfType<AdvancedMusicPlayer>().stem4;
                 StartCoroutine(FindObjectOfType<AdvancedMusicPlayer>().StartFade(source, 3.333f, 1.0f, 0.0f));
-                
+                FindObjectOfType<ToDoListManager>().FoundMouse(); 
                 break; 
 
         }

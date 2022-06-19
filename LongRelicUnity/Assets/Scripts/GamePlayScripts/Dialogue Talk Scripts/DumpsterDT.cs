@@ -23,7 +23,7 @@ public class DumpsterDT : DialogueTalk
 
     private void OnMouseDown()
     {
-        if (!Textbox.On) return; 
+       // if (!Textbox.On) return; 
 
 
         if(state == DialogueState.getLadder)
