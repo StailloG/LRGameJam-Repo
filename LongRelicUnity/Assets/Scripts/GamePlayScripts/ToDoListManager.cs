@@ -50,21 +50,25 @@ public class ToDoListManager : MonoBehaviour
     public void FoundKeyboard()
     {
         item1Found = true;
+        IsAllItemsFound();
     }
 
     public void FoundMouse()
     {
         item2Found = true;
+        IsAllItemsFound();
     }
 
     public void FoundMonitor()
     {
         item3Found = true;
+        IsAllItemsFound();
     }
 
     public void FoundHardDrive()
     {
         item4Found = true;
+        IsAllItemsFound();
     }
 
 
