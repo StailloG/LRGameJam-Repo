@@ -2668,6 +2668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515774557}
   - component: {fileID: 515774558}
+  - component: {fileID: 515774559}
   m_Layer: 0
   m_Name: Advance Music
   m_TagString: Untagged
@@ -2682,16 +2683,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515774556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.374096, y: 4.670265, z: -2.2161727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 510907624}
   - {fileID: 1556244879}
   - {fileID: 1126184036}
   - {fileID: 262930702}
-  m_Father: {fileID: 1843152688}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &515774558
 MonoBehaviour:
@@ -2710,6 +2711,18 @@ MonoBehaviour:
   stem3: {fileID: 1126184037}
   stem4: {fileID: 262930703}
   dur: 3.333
+--- !u!114 &515774559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515774556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c93864d5d838a4fb9d06607c406ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,7 +3330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRB: {fileID: 1052516242}
-  speed: 5
+  speed: 7.5
 --- !u!61 &1052516244
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5139,7 +5152,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 477101370}
-  - {fileID: 515774557}
   m_Father: {fileID: 214087124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

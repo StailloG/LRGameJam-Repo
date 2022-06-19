@@ -17,7 +17,7 @@ public class StartAndCredits : MonoBehaviour
 
     public IEnumerator DelayPlay()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.75f);
         SceneManager.LoadScene(1);
     }
 }
