@@ -520,13 +520,14 @@ GameObject:
   - component: {fileID: 49542318}
   - component: {fileID: 49542317}
   - component: {fileID: 49542319}
+  - component: {fileID: 49542320}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &49542315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -654,6 +655,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30.000002, y: 30.000002}
   m_EdgeRadius: 0
+--- !u!114 &49542320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49542314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d556b5b7b8d51740b9abfcca2d06681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introDialogue: {fileID: 0}
+  finalDialogue: {fileID: 0}
+  radius: 5
+  intro: {fileID: 11400000, guid: 3bb79e1a6f4ed064f9b7a80206b40e97, type: 2}
+  state: 0
 --- !u!1 &53033641
 GameObject:
   m_ObjectHideFlags: 0

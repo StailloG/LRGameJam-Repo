@@ -14,5 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
-    line: ' '
+    line: Wow, you got those computer components pretty quickly!
+  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
+    line: Happy to help! What are you going to do with these computer components
+      though?
+  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+    line: I've wanted to interact with the Lost Relic Games community on Discord...
+  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
+    line: Now I can create a game for the Lost Relic Games game jam!
   linkedSet: []
