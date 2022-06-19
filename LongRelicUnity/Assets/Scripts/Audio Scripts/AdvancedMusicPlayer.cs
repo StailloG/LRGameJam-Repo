@@ -8,7 +8,7 @@ public class AdvancedMusicPlayer : MonoBehaviour
     public AudioSource stem2;
     public AudioSource stem3;
     public AudioSource stem4;
-    public AudioSource stem5;
+   
     public float dur = 3.333f;
 
     // Start is called before the first frame update
@@ -43,12 +43,12 @@ public class AdvancedMusicPlayer : MonoBehaviour
         stem2.Play();
         stem3.Play();
         stem4.Play();
-        stem5.Play();
+      
         stem1.mute = true;
         stem2.mute = true;
         stem3.mute = true;
         stem4.mute = true;
-        stem5.mute = true;
+       
     }
 
 
