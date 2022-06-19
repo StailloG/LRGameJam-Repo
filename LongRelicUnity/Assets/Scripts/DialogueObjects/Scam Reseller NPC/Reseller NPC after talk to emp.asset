@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: 'So kid, what did blockstop worker say? '
+    line: 'So kid, what did the BlockStop worker say? '
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'No, they dont have any, sorry. '
+    line: 'No, they dont have any. Sorry. '
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: 'Dang it! If I had just one I can resell it for 1K or more! '
+    line: 'Dang it! If I had just one, I can resell it for $1K or more! '
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'what??? '
+    line: 'What??? '
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: 'Anyways, I dont break my promises, heres the hard drive. '
+    line: 'Anyways, I don''t break my promises. Here''s the hard drive. '
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'hey, this hard drive still got the security tag on it. '
+    line: 'Hey, this hard drive still has the security tag on it. '
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: 'oh really? well it was like that when I got it. '
+    line: 'Oh really? Well, it was like that when I got it. '
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'when you bought it? '
+    line: 'When you bought it? '
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: sure, now get lost kid
+    line: Sure, now get lost kid.
   linkedSet: []

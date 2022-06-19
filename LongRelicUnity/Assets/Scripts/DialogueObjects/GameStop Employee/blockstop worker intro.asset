@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: f318324ce0b5aa540b40fe473fbf5a68, type: 3}
-    line: 'Welcome to BlockStop! We now offer 30 for Astrophobia Deluxe! '
+    line: 'Welcome to BlockStop! We now offer $30.00 for Astrophobia Deluxe! '
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'hello! ohh I love that game! '
+    line: 'Hello! Ohh I love that game! '
   linkedSet: []

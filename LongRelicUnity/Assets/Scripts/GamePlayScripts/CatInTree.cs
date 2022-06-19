@@ -21,13 +21,13 @@ public class CatInTree : DialogueTalk
     {
         if (nearPlayer && Input.GetKeyDown(KeyCode.Space) && !Textbox.On)
         {
-            animator.enabled = false;
-            spriteRenderer.sprite = sprite;
-            ladderGO.SetActive(true);   
-            
             var catLady = FindObjectOfType<CatLadyDT>();
             if (catLady.state == CatLadyDT.DialogueState.wLadder)
             {
+                animator.enabled = false;
+                spriteRenderer.sprite = sprite;
+                ladderGO.SetActive(true);
+
                 catLady.state = CatLadyDT.DialogueState.saveCat;
             }
         }

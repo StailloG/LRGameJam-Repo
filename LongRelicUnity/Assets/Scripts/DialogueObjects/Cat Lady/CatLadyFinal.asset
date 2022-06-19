@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: a27e72c36980eed49b1a61077edb0617, type: 3}
-    line: 'Thank you so much for saving my cat!! It was trying to get this pc mouse
-      stuck on branches! '
+    line: Thank you so much for saving my cat!! It was chasing this pc mouse all
+      the way up to the tree!
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
     line: 'Can I have it ? '
-  - profile: {fileID: 0}
+  - profile: {fileID: 21300000, guid: a27e72c36980eed49b1a61077edb0617, type: 3}
     line: 'Of course kid! Just keep it away from my cat! '
   linkedSet: []

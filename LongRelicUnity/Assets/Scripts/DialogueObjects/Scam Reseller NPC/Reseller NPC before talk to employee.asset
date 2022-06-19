@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: Psst! hey kid, wanna do me a favor?
+    line: Psst! Hey kid, wanna do me a favor?
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'uhh sure I guess, whats in it for me? '
+    line: Uhh, sure I guess. What's in it for me?
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
-    line: 'nice! you''re a hustler like me. Ill give you a free 1 TB hard drive. '
+    line: 'Nice! You''re a hustler like me. I''ll give you a free 1 TB hard drive. '
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: 'oh sweet!! '
+    line: 'Oh sweet!! '
   - profile: {fileID: 21300000, guid: cc803acbb2e41df41b54c77286d2d9e5, type: 3}
     line: All you gotta do is ask that blockstop worker if they have any Box-X 5
       Consoles in stock
