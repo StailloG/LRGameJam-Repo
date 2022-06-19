@@ -404,12 +404,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.471
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1384,7 +1384,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2019788663979261963, guid: bd29540df9f9dfa42abea0e046c07ffa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2bb8f42f917c6ea42ade113a90a06036, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -2742,7 +2742,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2019788663979261963, guid: bd29540df9f9dfa42abea0e046c07ffa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 7f73bf6beea201e438b3abf321cdcef6, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -3438,6 +3438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5999029164514082727, guid: e1aefdf9ae0e2bf458e2b9b1bf97ecc4, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.465
+      objectReference: {fileID: 0}
     - target: {fileID: 5999029164639063353, guid: e1aefdf9ae0e2bf458e2b9b1bf97ecc4, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3867,7 +3871,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2019788663979261963, guid: bd29540df9f9dfa42abea0e046c07ffa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 17098b7e8535fe1449f7c1389dd0a109, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -5056,7 +5060,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2019788663979261963, guid: bd29540df9f9dfa42abea0e046c07ffa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 21c4249058077df4b94de9598c508526, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
