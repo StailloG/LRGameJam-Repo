@@ -10,18 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 828c47c4a50d62f4d8846a98e9506ad4, type: 3}
-  m_Name: Intro
+  m_Name: Mid
   m_EditorClassIdentifier: 
   dialogues:
   - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
-    line: Hey friend, how are you!
+    line: Have you found all the components yet?
   - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: I'm good, thanks! How about you?
+    line: No, not yet.
   - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
-    line: I could be better if I had some computer parts! Would you please find some
-      for me?
-  - profile: {fileID: 21300000, guid: bf2500732d8c1df42b1d1315a563ab83, type: 3}
-    line: If it'll cheer you up... Let me write all of this down in my to-do list.
-  - profile: {fileID: 21300000, guid: bfa2398b72785164b9af79675abb395f, type: 3}
-    line: Perfect! Come talk to me when you have all the computer components!
+    line: Well, you know where to find me when you do!
   linkedSet: []

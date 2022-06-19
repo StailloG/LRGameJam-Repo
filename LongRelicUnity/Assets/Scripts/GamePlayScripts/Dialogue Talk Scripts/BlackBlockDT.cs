@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class BlackBlockDT : DialogueTalk
 {
     //if person has extra dialogue, you would add them here 
-    [SerializeField] private Dialogue_Set intro;
+    [SerializeField] private Dialogue_Set notEnoughParts;
+    [SerializeField] private Dialogue_Set allParts;
 
-    public enum DialogueState { intro } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
+    public enum DialogueState { intro, mid, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
     public DialogueState state;
 
     // Start is called before the first frame update
@@ -26,7 +27,17 @@ public class BlackBlockDT : DialogueTalk
         {
             case DialogueState.intro:
                 IntroDialogue();   //this is from the inherited DialogueTalk Class 
-               // StartCoroutine(NextLvl());
+                state = DialogueState.mid;
+                break;
+
+            case DialogueState.mid:
+                notEnoughParts?.sendDialogue();
+                state = DialogueState.final;
+                break;
+
+            case DialogueState.final:
+                allParts?.sendDialogue();
+                StartCoroutine(NextLvl());
                 break;
 
         }
