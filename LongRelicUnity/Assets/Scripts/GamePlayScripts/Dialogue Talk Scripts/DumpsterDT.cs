@@ -51,6 +51,8 @@ public class DumpsterDT : DialogueTalk
             Debug.Log("op");
             ladder?.sendDialogue();
             state = DialogueState.getMonitor;
+            var ladderGO = FindObjectOfType<Ladder>();
+            Destroy(ladderGO.gameObject);
             FindObjectOfType<SFXPlayer>().PlayTrash();
         }
 
