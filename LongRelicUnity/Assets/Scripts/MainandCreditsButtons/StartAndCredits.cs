@@ -7,17 +7,11 @@ public class StartAndCredits : MonoBehaviour
 {
     public void StartGame()
     {
-        StartCoroutine(DelayPlay());
+        SceneManager.LoadScene(1);
     }
 
     public void Credits()
     {
         SceneManager.LoadScene(2);
-    }
-
-    public IEnumerator DelayPlay()
-    {
-        yield return new WaitForSeconds(0.75f);
-        SceneManager.LoadScene(1);
     }
 }

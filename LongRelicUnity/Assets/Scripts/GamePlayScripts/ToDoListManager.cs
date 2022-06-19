@@ -22,6 +22,10 @@ public class ToDoListManager : MonoBehaviour
 
 
 
+    [SerializeField] private Dialogue_Set finishItems;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,8 +73,7 @@ public class ToDoListManager : MonoBehaviour
         if (item1Found && item2Found && item3Found && item4Found)
         {
             FindObjectOfType<BlackBlockDT>().state = BlackBlockDT.DialogueState.final;
-            //"Oh I can go back to my friend now" 
-            //finishItems?.sendDialogue(); 
+            finishItems?.sendDialogue(); 
         }
            
        
