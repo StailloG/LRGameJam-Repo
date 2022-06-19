@@ -26,7 +26,7 @@ public class BlackBlockDT : DialogueTalk
         {
             case DialogueState.intro:
                 IntroDialogue();   //this is from the inherited DialogueTalk Class 
-                StartCoroutine(NextLvl());
+               // StartCoroutine(NextLvl());
                 break;
 
         }

@@ -26,8 +26,29 @@ public class DumpsterDT : DialogueTalk
        // if (!Textbox.On) return; 
 
 
-        if(state == DialogueState.getLadder)
+       
+
+    }
+
+    private void Update()
+    {
+        //  Debug.Log(Mathf.Abs(Vector3.Distance(transform.position, GameObject.FindObjectOfType<PlayerMovement>().transform.position)) + " is the distance between ");
+        //Debug.Log(nearPlayer); 
+        Debug.Log(nearPlayer + ""+ Input.GetKeyDown(KeyCode.Space) + " " +!Textbox.On + "");
+        if (nearPlayer && Input.GetKeyDown(KeyCode.Space) && !Textbox.On)
         {
+           
+            Talk();
+        }
+    }
+    public override void Talk()
+    {
+        //logic here to determine what to say 
+        //using enum to do that 
+        Debug.Log("tryna talk");
+        if (state == DialogueState.getLadder)
+        {
+            Debug.Log("op");
             ladder?.sendDialogue();
             state = DialogueState.getMonitor;
             FindObjectOfType<SFXPlayer>().PlayTrash();
@@ -49,17 +70,7 @@ public class DumpsterDT : DialogueTalk
 
         }
 
-    }
 
-    private void Update()
-    {
-      
-    }
-    public override void Talk()
-    {
-        //logic here to determine what to say 
-        //using enum to do that 
-       
     }
 
     private void OnMouseUp()

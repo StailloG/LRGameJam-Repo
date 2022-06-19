@@ -64,7 +64,8 @@ public class ToDoListManager : MonoBehaviour
 
     public bool IsAllItemsFound()
     {
-
+       
+       
         return item1Found && item2Found && item3Found && item4Found;
     }    
 

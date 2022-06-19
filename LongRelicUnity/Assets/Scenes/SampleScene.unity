@@ -655,6 +655,7 @@ MonoBehaviour:
   introDialogue: {fileID: 0}
   finalDialogue: {fileID: 0}
   radius: 5
+  debugNearPlayer: 0
   intro: {fileID: 11400000, guid: 3bb79e1a6f4ed064f9b7a80206b40e97, type: 2}
   state: 0
 --- !u!1 &53033641
@@ -2304,6 +2305,7 @@ MonoBehaviour:
   introDialogue: {fileID: 11400000, guid: a0ccab9fa920dbe4b968f34344b25634, type: 2}
   finalDialogue: {fileID: 11400000, guid: b7e71c7dad23ea645a32cd65fae3f589, type: 2}
   radius: 4.86
+  debugNearPlayer: 0
   askForXBox: {fileID: 11400000, guid: cba0fb3d851abb34d808b73e359e1c66, type: 2}
   state: 0
 --- !u!61 &455913779
@@ -3273,7 +3275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052516239}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.44799, y: -9.679034, z: 1.852064}
+  m_LocalPosition: {x: -15.44799, y: -9.679034, z: 0}
   m_LocalScale: {x: 0.07620552, y: 0.07620552, z: 0.07620552}
   m_Children:
   - {fileID: 853712173}
@@ -3457,6 +3459,7 @@ MonoBehaviour:
   introDialogue: {fileID: 11400000, guid: 5d821081d4fe6d448a0a6fe9898e36d0, type: 2}
   finalDialogue: {fileID: 11400000, guid: 567735ab62379cd4ca2ce3dd2d26f062, type: 2}
   radius: 5.02
+  debugNearPlayer: 0
   afterBlockstop: {fileID: 11400000, guid: dc0e8269f0faf2d49b3c82d9a8c7bcf5, type: 2}
   state: 0
 --- !u!212 &1060734278
@@ -3833,6 +3836,7 @@ MonoBehaviour:
   introDialogue: {fileID: 11400000, guid: 15e3402d852403d439df89e49bfd34f3, type: 2}
   finalDialogue: {fileID: 0}
   radius: 5.98
+  debugNearPlayer: 0
   withoutLadder: {fileID: 11400000, guid: cca7fc22e6cafeb4284ba168ee99755e, type: 2}
   withLadder: {fileID: 11400000, guid: 40a593c5a1a38764f96329943111e4fe, type: 2}
   finalSentence: {fileID: 11400000, guid: dbe74abfa9759af4bb84bda4984368fc, type: 2}
@@ -3985,6 +3989,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c4c3520d17a284987cdcb5a60a933c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  introDialogue: {fileID: 0}
+  finalDialogue: {fileID: 0}
+  radius: 7.4
+  debugNearPlayer: 0
 --- !u!1 &1306788661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,7 +4025,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introDialogue: {fileID: 11400000, guid: 343943c7744e1394486abc8eb2281f12, type: 2}
   finalDialogue: {fileID: 0}
-  radius: 5
+  radius: 6.9
+  debugNearPlayer: 0
   ladder: {fileID: 11400000, guid: 8bee423ec49117b45a8ae0b8527e4fe7, type: 2}
   monitor: {fileID: 11400000, guid: 7c106da1918bcc24988d867dd6cea58b, type: 2}
   final: {fileID: 11400000, guid: 27255369d82e46442bb3e3b86b5ecf29, type: 2}
@@ -4391,6 +4400,7 @@ MonoBehaviour:
   introDialogue: {fileID: 11400000, guid: 22b7935883e3f9c4895bc0027f1ef7a0, type: 2}
   finalDialogue: {fileID: 0}
   radius: 5.46
+  debugNearPlayer: 0
   collectCoins: {fileID: 11400000, guid: 74602343f1644ee44827fbf083146a99, type: 2}
   transaction: {fileID: 11400000, guid: f647f7528dff51f47b9d2ef74d6ae294, type: 2}
   finalSentence: {fileID: 11400000, guid: afa090cdb0e909e43a1f42573ec9b1f0, type: 2}
