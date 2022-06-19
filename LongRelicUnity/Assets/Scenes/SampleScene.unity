@@ -2068,7 +2068,7 @@ MonoBehaviour:
   item3UISlash: {fileID: 1391009503}
   HardDriveUI: {fileID: 269289957}
   toDoPanel: {fileID: 1744806918}
-  finishItems: {fileID: 0}
+  finishItems: {fileID: 11400000, guid: 28e1e197484dbef45ac915c8781df4f2, type: 2}
 --- !u!1 &434967743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3938,11 +3938,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249761121}
   m_LocalRotation: {x: -0, y: -0, z: 0.07212768, w: 0.99739546}
-  m_LocalPosition: {x: 20.13, y: -2.86, z: 0}
-  m_LocalScale: {x: 0.24012287, y: 0.24012287, z: 0.24012287}
+  m_LocalPosition: {x: -6.5307302, y: -11.327637, z: 0}
+  m_LocalScale: {x: 0.69388384, y: 0.69388384, z: 0.69388384}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1281280782}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.272}
 --- !u!1 &1281280780
 GameObject:
@@ -4026,7 +4026,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.39, y: 1.06, z: 0}
   m_LocalScale: {x: 0.34605628, y: 0.34605628, z: 0.34605628}
-  m_Children: []
+  m_Children:
+  - {fileID: 1249761123}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4092,6 +4093,7 @@ MonoBehaviour:
   radius: 7.4
   debugNearPlayer: 0
   sprite: {fileID: 21300000, guid: 1459ddb5b7922d94082476a5d5c7acbb, type: 3}
+  ladderGO: {fileID: 1249761121}
 --- !u!1 &1306788661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4129,6 +4131,8 @@ MonoBehaviour:
   ladder: {fileID: 11400000, guid: 8bee423ec49117b45a8ae0b8527e4fe7, type: 2}
   monitor: {fileID: 11400000, guid: 7c106da1918bcc24988d867dd6cea58b, type: 2}
   final: {fileID: 11400000, guid: 27255369d82e46442bb3e3b86b5ecf29, type: 2}
+  sr: {fileID: 1773376415}
+  sprite: {fileID: 21300000, guid: aeb8663c9a1cb3241b61e9b200fc7c75, type: 3}
   state: 0
 --- !u!4 &1306788663
 Transform:

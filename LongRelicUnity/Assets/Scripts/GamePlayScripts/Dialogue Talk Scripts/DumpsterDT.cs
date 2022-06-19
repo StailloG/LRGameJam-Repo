@@ -9,6 +9,8 @@ public class DumpsterDT : DialogueTalk
     [SerializeField] private Dialogue_Set monitor;
     [SerializeField] private Dialogue_Set final;
 
+    [SerializeField] private SpriteRenderer sr; 
+    [SerializeField] private Sprite sprite;
     private bool inArea = false;
 
     public enum DialogueState { intro, getLadder, getMonitor, final } //these are the potential dialogue states the character can be in, you can add more states if you need more dialogue
@@ -21,39 +23,33 @@ public class DumpsterDT : DialogueTalk
                                     //in other scripts is where you would use "FindObjectOfType<BlockStopEmployeeDT>().state = DialogueState.action" to change states
     }
 
-    private void OnMouseDown()
-    {
-       // if (!Textbox.On) return; 
-
-
-       
-
-    }
+ 
 
     private void Update()
     {
-        //  Debug.Log(Mathf.Abs(Vector3.Distance(transform.position, GameObject.FindObjectOfType<PlayerMovement>().transform.position)) + " is the distance between ");
-        //Debug.Log(nearPlayer); 
-        Debug.Log(nearPlayer + ""+ Input.GetKeyDown(KeyCode.Space) + " " +!Textbox.On + "");
+      
+       
         if (nearPlayer && Input.GetKeyDown(KeyCode.Space) && !Textbox.On)
-        {
-           
+        {         
             Talk();
         }
+
     }
     public override void Talk()
     {
         //logic here to determine what to say 
         //using enum to do that 
-        Debug.Log("tryna talk");
+       
         if (state == DialogueState.getLadder)
         {
-            Debug.Log("op");
+            
             ladder?.sendDialogue();
             state = DialogueState.getMonitor;
             var ladderGO = FindObjectOfType<Ladder>();
             Destroy(ladderGO.gameObject);
             FindObjectOfType<SFXPlayer>().PlayTrash();
+            FindObjectOfType<CatLadyDT>().state = CatLadyDT.DialogueState.wLadder;
+            return; 
         }
 
         if (state == DialogueState.getMonitor)
@@ -62,6 +58,9 @@ public class DumpsterDT : DialogueTalk
             state = DialogueState.final;
             FindObjectOfType<ToDoListManager>().FoundMonitor();
             FindObjectOfType<SFXPlayer>().PlayTrash();
+
+            sr.sprite = sprite;
+            return; 
         }
 
         if (state == DialogueState.final)
@@ -69,16 +68,13 @@ public class DumpsterDT : DialogueTalk
             final?.sendDialogue();
             var source = FindObjectOfType<AdvancedMusicPlayer>().stem3;
             StartCoroutine(FindObjectOfType<AdvancedMusicPlayer>().StartFade(source, 3.333f, 1.0f, 0.0f));
-
+            return; 
         }
 
 
     }
 
-    private void OnMouseUp()
-    {
-        
-    }
+   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

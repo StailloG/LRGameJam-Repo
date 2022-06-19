@@ -6,12 +6,14 @@ public class CatInTree : DialogueTalk
 {
     SpriteRenderer spriteRenderer; 
     Animator animator;
-    [SerializeField] Sprite sprite; 
+    [SerializeField] Sprite sprite;
+    [SerializeField] GameObject ladderGO; 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        ladderGO.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class CatInTree : DialogueTalk
         {
             animator.enabled = false;
             spriteRenderer.sprite = sprite;
+            ladderGO.SetActive(true);   
             
             var catLady = FindObjectOfType<CatLadyDT>();
             if (catLady.state == CatLadyDT.DialogueState.wLadder)
