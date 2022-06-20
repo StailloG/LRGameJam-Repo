@@ -45,7 +45,7 @@ public class BlackBlockDT : DialogueTalk
 
     public IEnumerator NextLvl()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(8f);
         SceneManager.LoadScene(2);
     }
 }

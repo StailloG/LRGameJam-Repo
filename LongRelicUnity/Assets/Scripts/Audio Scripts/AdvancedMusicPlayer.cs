@@ -12,12 +12,12 @@ public class AdvancedMusicPlayer : MonoBehaviour
     public float dur = 3.333f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //play all music but mute them all immiediately 
         //NO STOPPING ONLY MUTING AND UNMUTING 
-        //PlayAllSources();
-       // StartCoroutine(StartFade(stem1, dur, 1.0f, 0.0f));
+        PlayAllSources();
+        StartCoroutine(StartFade(stem1, dur, 1.0f, 0.0f));
     }
 
     // Update is called once per frame
@@ -40,10 +40,13 @@ public class AdvancedMusicPlayer : MonoBehaviour
     void PlayAllSources()
     {
         stem1.Play();
+       
         stem2.Play();
         stem3.Play();
+      
         stem4.Play();
-        return;
+     
+        
         stem1.mute = true;
         stem2.mute = true;
         stem3.mute = true;
@@ -54,7 +57,7 @@ public class AdvancedMusicPlayer : MonoBehaviour
 
     public IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume, float startVolume)
     {
-        yield break;
+       
         if(audioSource.mute == true)
             audioSource.mute = false;
 
