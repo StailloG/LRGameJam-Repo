@@ -1,2 +1,2 @@
-# LRGameJam Repo
+# Lost Relic Game Jam Repo
  
