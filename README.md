@@ -1,5 +1,5 @@
-# Collecting Connected Computer Components for the Lost Relic Game Jam
-A 2D casual, adventure game created by Stephanie Castillo and [Peterson Normil](https://www.linkedin.com/in/peterson-normil-45a24a61/).
+# Collecting Connected Computer Components
+A 2D casual, adventure game created by Stephanie Castillo and [Peterson Normil](https://www.linkedin.com/in/peterson-normil-45a24a61/) for the [Lost Relic Game Jam](https://itch.io/jam/lost-relic-games-1).
 This game was created in Unity, coded in C# using Visual Studios, art created in Clip Studio Pro, and music created in 
 
 Play the game for yourself [here.](https://staillogaming.itch.io/collecting-connected-computer-components)
